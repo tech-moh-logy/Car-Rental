@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LuxScape Motors</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="header" id="header">
+      <nav class="left-nav">
+        <div class="title">
+            <img src="IMG_vehicleCompany.jpeg" width="130px" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); margin-right: 20px;">
+        </div>
+          <ul>
+              <!-- Car 1: Lexus GX 550 -->
+              <li><a href="#" id="gx550">Lexus GX 550</a></li>
+              <!-- Car 2: Chevy Suburban -->
+              <li><a href="#" id="subarban">Chevy Suburban</a></li>
+              <!-- Car 3: Cadillac Escalade -->
+              <li><a href="#" id="escalade">Cadillac Escalade</a></li>
+              <!-- Car 4: Mercedes-Benz GLS -->
+              <li><a href="#" id="gls">Mercedes-Benz GLS</a></li>
+              <!-- Car 5: BMW X7 -->
+              <li><a href="#" id="x7">BMW X7</a></li>
+              <!-- Car 6: BMW X5 -->
+              <li><a href="#" id="x5">BMW X5</a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <!-- <div id="carName">
+    <h2 id="carName">Lexus GX 550</h2>
+    <p id="carName">The Lexus GX 550 epitomizes the epitome of luxury and performance. With its commanding presence on the road, this SUV offers a blend of refinement and ruggedness. Underneath its sleek exterior lies a powerful engine that delivers exhilarating performance both on and off the pavement. Inside, the GX 550 boasts a sumptuous interior adorned with premium materials and cutting-edge technology, ensuring a comfortable and connected driving experience. Whether cruising through urban streets or exploring rough terrains, the Lexus GX 550 stands as a symbol of elegance and capability, redefining the standards of luxury SUVs.</p>
+  </div> -->
+
+  <div class="info">
+    <div>
+      <h2 id="acceleration">1.9s</h2>
+      <p id="optimalLevel">60 mph</p>
+    </div>
+    <div>
+      <h2 id="power">140 mph</h2>
+      <p id="topSpeed">Top Speed</p>
+    </div>
+    <div>
+      <h2 id="actualRange">270 mi</h2>
+      <p id="maxRange">Max Range</p>
+    </div>
+    <div>
+      <h2 id="theRentalPrice">$60</h2>
+      <p id="perDay">Per Day</p>
+    </div>
+    <div class="line"></div>
+    <div>
+      <h2 id="model">Lexus GX 550</h2>
+    </div>
+    <div class="centered-btn">
+      <a href="#" class="btn" id="reserveBtn">Reserve Now</a>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="chatbot">
+    <div class="chat-icon"></div>
+    <div id="chatArea" class="chat-area"></div>
+    <input type="text" id="userInput" class="user-input" placeholder="Type your message here...">
+    <button onclick="sendMessage()" class="send-btn">Go</button>
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script> 
+
+</body>
+
+</html>
