@@ -1,0 +1,253 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  overflow-x: hidden;
+  background-color: #f0f0f0; /* Background color */
+}
+
+/* Navigation styles */
+nav {
+  box-shadow: 2px 2px 50px white; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Set height of the navbar */
+  background: linear-gradient(90deg, #000000 55%, #030303); /* Linear gradient background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  z-index: 1000;
+  border-bottom: 1px solid #333; /* Add a border at the bottom */
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);  */
+  /* Add shadow */
+  overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
+  transition: height 0.3s ease; /* Add transition for height change */
+}
+
+nav:hover {
+  transition: 1s;
+  box-shadow: 2px 2px 50px #000000; 
+  height: 100px; /* Change height on hover */
+}
+
+.logo {
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold; /* Bold text */
+  margin-left: 20px; /* Adjusted margin */
+  transition: font-size 0.3s ease; /* Add transition for font size change */
+}
+
+nav:hover .logo {
+  font-size: 18px; /* Larger font size on hover */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px; /* Spacing between items */
+  padding-left: 50px;
+}
+
+nav ul li a:hover {
+  color: #FFD900;
+  text-shadow: 1px 1px 50px white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 18px; /* Larger font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+/* Header styles */
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(IMG_gx550.jpeg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  transition: background-image 1s;
+}
+
+/* Subtitle styles */
+.subtitle {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Button styles */
+.btn {
+  box-shadow: 2px 2px 50px black; /* Add shadow on hover */;
+  font-weight: 900;
+  color: #000000;
+  text-decoration: none;
+  /* background-color: #e32400;  */
+  /* Red button color */
+  background-color: white;
+  padding: 12px 24px; /* Larger padding */
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-right: 70px;
+}
+
+.btn:hover {
+  background-color: #232323; /* Lighter shade of red */
+  box-shadow: 2px 2px 50px white; /* Add shadow on hover */;
+  color: white;
+}
+
+/* Info section styles */
+.info {
+  width: 100%;
+  padding: 0 20px; /* Add padding to the sides */
+  display: flex;
+  align-items: center;
+  position: fixed;
+  color: white;
+  bottom: 50px;
+  left: 0;
+}
+
+.info div {
+  margin: 0 10px; /* Add margin to the sides */
+}
+
+.info div h2 {
+  font-size: 1.25em; /* Reduce font size for car name */
+  font-weight: 900;
+}
+
+.info div p {
+  font-size: 0.75em; /* Reduce font size for numbers */
+}
+
+.info .line {
+  flex: 1;
+  background: white;
+  height: 2px;
+}
+
+.centered-btn {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 10px; /* Adjusted margin */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Adjust spacing for smaller screens */
+  }
+
+  nav .btn {
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+  }
+}
+
+
+
+
+
+
+/* Chatbot styles */
+.chatbot {
+  box-shadow: 2px 2px 10px blue;
+  position: fixed;
+  bottom: 150px; /* Adjusted bottom position */
+  right: 20px;
+  width: 50px; /* Adjusted width */
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  height: 50px; /* Initial height */
+}
+
+.chatbot.expanded {
+  height: 300px; /* Expanded height */
+  width: 300px;
+}
+
+
+/* Chat icon styles */
+.chat-icon {
+  border-radius: 50%;
+  box-shadow: 1px 1px 50px #008cb4;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-image: url('IMG_vehicleCompany.jpeg'); /* Path to your collapsed icon */
+  background-size: cover;
+  transition: background-image 0.3s ease; /* Smooth transition */
+}
+
+/* .chat-icon.expanded {
+  box-shadow: 1px 1px 50px #831100;
+} */
+
+.chat-area {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.user-input {
+  width: calc(100% - 60px); /* Adjusted width */
+  padding: 8px;
+  margin-right: 5px;
+  background-color: #333333; /* Darker background color */
+  color: #ffffff;
+  border: 1px solid #00a3d7; /* Blue border */
+  border-radius: 5px;
+}
+.send-btn {
+  position: relative; 
+  padding: 10px 20px;
+  background-color: #001e57;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Add box-sizing property */
+  box-sizing: border-box;
+  /* Add z-index property if needed */
+  z-index: 1;
+}
+
+.send-btn:hover {
+  background-color: #003d80;
+}
+
+/* Ensure parent container has proper overflow property */
+.container {
+  overflow: visible; /* or auto if necessary */
+}
